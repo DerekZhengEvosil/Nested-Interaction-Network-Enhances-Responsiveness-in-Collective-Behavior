@@ -1,0 +1,11 @@
+clear;clc
+addpath("../utility/")
+load("../data/robotic_experiments_data/Following_PNIN.mat")
+drawRobotsTraj_following(G)
+drawRobotsTraj_followingInfo(G)
+%%
+clear;clc
+addpath("../utility/")
+load("../data/robotic_experiments_data/Following_WSIN.mat")
+drawRobotsTraj_following(G)
+drawRobotsTraj_followingInfo(G)
