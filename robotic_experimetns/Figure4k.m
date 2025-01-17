@@ -1,4 +1,5 @@
 clear;clc;
+addpath("../utility/")
 load("../data/robotic_experiments_data/collecitve_following_metrics.mat")
 figure
 figSize_L = 16;

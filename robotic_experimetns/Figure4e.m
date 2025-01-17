@@ -1,4 +1,5 @@
 clear;clc;
+addpath("../utility/")
 load("../data/robotic_experiments_data/collective_hovering_curvature.mat")
 figure
 figSize_L = 3.5;

@@ -1,16 +1,22 @@
 %% Figure 3g
+% group response signals of PNIN
 clear;clc
 addpath("../utility/")
 folder_name = "../data/collective_turns_data/PNIN_eta_10/Sim_1";
 [mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
-%%
+%% 
+% group responses signal of WSIN
+addpath("../utility/")
 folder_name = "../data/collective_turns_data/WSIN_eta_10/Sim_1";
 [mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
 %%
+% group responses signal of FCIN
+addpath("../utility/")
 folder_name = "../data/collective_turns_data/FCIN_eta_10/Sim_1";
 [mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
 %% Figure 3h
 clear;clc
+addpath("../utility/")
 turning_angle = 75;
 standard_sig_file = "../data/collective_turns_data/standard_signal_ta=" + num2str(turning_angle) + ".mat";
 load(standard_sig_file)

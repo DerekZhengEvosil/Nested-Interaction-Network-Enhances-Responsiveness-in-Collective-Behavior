@@ -1,6 +1,7 @@
 %% Figure 2d
 clear;clc;
 N = 100;
+addpath("../utility/")
 dataFolder = "../data/SIR_data/result_N=100_th=0.3";
 infRate_list = [0.5];
 recRate = 0.05;
@@ -125,6 +126,7 @@ set(gca, 'Fontname', 'helvetica', 'FontSize', 9)
 %% Figure 2e
 clear;clc;
 N = 100;
+addpath("../utility/")
 dataFolder = "../data/SIR_data/result_N=100_th=0.3";
 infRate_list = [0.3:0.1:0.5];
 recRate = 0.05;
@@ -181,6 +183,7 @@ legend(p_e, ["$\beta_{max}=$" + infRate_list'],'box','off','Location','best','In
 set(gca, 'Fontname', 'helvetica', 'FontSize', 9)
 %% Figure 2f
 clear;clc;
+addpath("../utility/")
 dataFolder = "../data/SIR_data/result_N=100_th=0.3";
 infRate_list = [0.3:0.1:0.5];
 recRate = 0.05;
@@ -237,6 +240,7 @@ legend(p_e, ["$\beta_{\rm{max}}=$" + infRate_list'],'box','off','Location','best
 set(gca, 'Fontname', 'helvetica', 'FontSize', 9)
 %% The effect of N on the fully activated time all infection rates
 clear;clc;
+addpath("../utility/")
 all_finish_tmp = [];
 inf_rate_x = [];
 group_c = [];
