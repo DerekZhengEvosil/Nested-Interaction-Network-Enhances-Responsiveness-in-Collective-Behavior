@@ -1,4 +1,5 @@
 clear;clc;
+addpath("../utility/")
 load("../data/robotic_experiments_data/collective_following_heading_error.mat")
 figure
 figSize_L = 4;
