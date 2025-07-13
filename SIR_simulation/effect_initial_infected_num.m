@@ -1,4 +1,6 @@
 %% Figure 2g
+% This MATLAB code generates Figure 2g, which explores the relationship between the initial number of infected individuals and the final infected proportion 
+% under varying mutation rates in a SIR (Susceptible-Infected-Recovered) model. 
 clear;clc;
 N = 100;
 infRate_list = [0.5];
