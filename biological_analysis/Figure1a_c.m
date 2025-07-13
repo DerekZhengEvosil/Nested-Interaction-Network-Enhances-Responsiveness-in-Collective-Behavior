@@ -1,6 +1,9 @@
 clear;clc;
 addpath("../data/")
 load("NODF_curvature_polarization")
+% This MATLAB code aims to analyze and visualize the relationship between various factors affecting fish schools, 
+% specifically their group curvature, polarization, and nestedness (a measure of network interaction). 
+% The code generates several figures (1a, 1b, and 1c) displaying different statistical relationships, including correlation plots and scatter plots.
 %% 
 % color_ind categorize the group size of fish data, 
 % 1-5 fish, 2-10 fish, 3-15 fish
