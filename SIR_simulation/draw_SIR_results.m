@@ -1,4 +1,7 @@
 %% Figure 2d
+% This MATLAB code generates several figures (2d, 2g, 2e, 2f) related to the dynamics of an SIR (Susceptible-Infected-Recovered) model, 
+% exploring how various parameters such as mutation rate, infection rate, and group size affect the spread of an infectious disease. 
+% The code contains loops to process the results for different mutation rates, infection rates, and group sizes. 
 clear;clc;
 N = 100;
 addpath("../utility/")
