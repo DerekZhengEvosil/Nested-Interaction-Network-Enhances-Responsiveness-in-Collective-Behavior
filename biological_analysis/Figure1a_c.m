@@ -12,7 +12,6 @@ figure
 figSize_L = 10;
 figSize_W = 10;
 set(gcf,'Units','centimeter','Position',[5 5 figSize_L figSize_W]);
-[rho,pval] = corr(M_index',op',"type","Spearman");
 g(1,1)=gramm('x',(op));
 g(1,1).set_layout_options('Position',[0.1 0.8 0.62 0.2],... %Set the position in the figure (as in standard 'Position' axe property)
     'legend',false,... % No need to display legend for side histograms
@@ -54,7 +53,6 @@ figSize_L = 10;
 figSize_W = 3.5;
 set(gcf,'Units','centimeter','Position',[5 5 figSize_L figSize_W]);
 % [b,~,~,~,stats] = regress(used_U_turn_NODF',used_op');
-[rho,pval] = corr(NODF',op',"type","Spearman")
 %Create a scatter plot
 g = gramm('x',op,'y',NODF,'color', color_ind);
 g.set_names('x','average group polarization','y','Nestedness');
@@ -73,7 +71,6 @@ figure
 figSize_L = 10;
 figSize_W = 3.5;
 set(gcf,'Units','centimeter','Position',[5 5 figSize_L figSize_W]);
-[rho,pval] = corr(NODF',M_index',"type","Spearman")
 %Create a scatter plot
 g = gramm('x',M_index,'y',NODF,'color', color_ind);
 g.set_names('x','average group curvature','y','Nestedness');
