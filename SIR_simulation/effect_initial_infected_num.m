@@ -14,8 +14,8 @@ for infRate = infRate_list
         inf_idx = find(infNum == infNum_list);
         load(dataFolder + "/SIR_result_EXP_" + "infRate=" + num2str(infRate) + "-recRate=" + num2str(recRate) + "-infNum=" + num2str(infNum) + ".mat")
         nestedness = Data{1};
-        num_infected = Data{2};
-        num_rec = Data{3};
+        num_infected = Data{2}; % data for infected nodes
+        num_rec = Data{3}; % data for recorverd nodes
         time_list = Data{4};
         mutate_rate = Data{5};
         lower_CI = [];
