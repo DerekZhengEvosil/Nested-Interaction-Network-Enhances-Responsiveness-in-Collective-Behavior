@@ -1,4 +1,7 @@
-%% Figure 3g
+%% 
+% This MATLAB code generates two figures (3g and 3h) that visualize the group response signals 
+% for different categories of collective behavior models (PNIN, WSIN, FCIN) under varying conditions, such as noise level and time. 
+% These figures help analyze how the collective response varies across models, and how these responses are compared to a standard signal.
 % group response signals of PNIN
 clear;clc
 addpath("../utility/")
@@ -18,7 +21,7 @@ folder_name = "../data/collective_turns_data/FCIN_eta_10/Sim_1";
 clear;clc
 addpath("../utility/")
 turning_angle = 75;
-standard_sig_file = "../data/collective_turns_data/standard_signal_ta=" + num2str(turning_angle) + ".mat";
+standard_sig_file = "../data/collective_turns_data/standard_signal_ta=" + num2str(turning_angle) + ".mat"; % standard response signals
 load(standard_sig_file)
 % theta_info = 75
 load("../data/collective_turns_data/group_response_signals.mat")
