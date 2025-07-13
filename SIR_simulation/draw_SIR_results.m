@@ -7,17 +7,17 @@ N = 100;
 addpath("../utility/")
 dataFolder = "../data/SIR_data/result_N=100_th=0.3";
 infRate_list = [0.5];
-recRate = 0.05;
-infNum_list = [1];
+recRate = 0.05; % recovered rate
+infNum_list = [1]; % initial activation number of node
 mute_list = round(linspace(0,1,10),1);
 for infRate = infRate_list
     for infNum = infNum_list 
         load(dataFolder + "/SIR_result_EXP_" + "infRate=" + num2str(infRate) + "-recRate=" + num2str(recRate) + "-infNum=" + num2str(infNum) + ".mat")
         nestedness = Data{1};
-        num_infected = Data{2};
-        num_rec = Data{3};
-        time_list = Data{4};
-        mutate_rate = Data{5};
+        num_infected = Data{2}; % number of infected node
+        num_rec = Data{3}; % number of recoverd node
+        time_list = Data{4}; % temporal time in simulations
+        mutate_rate = Data{5}; % mutation condition
         for muteRate = mute_list
             mut_idx = find(muteRate==mute_list);
             nestedness_ave(mut_idx) = nanmean(nestedness{mut_idx});
@@ -25,7 +25,7 @@ for infRate = infRate_list
             rec_tmp = num_rec{1, mut_idx};
             num_infected_ave(mut_idx,:) = nanmean(infected_tmp,1);
             num_rec_ave(mut_idx,:) = nanmean(rec_tmp,1);
-            num_sus_ave(mut_idx,:) = nanmean(N - (infected_tmp + rec_tmp), 1);
+            num_sus_ave(mut_idx,:) = nanmean(N - (infected_tmp + rec_tmp), 1); % the number of susceptible state
             time_ave(mut_idx,:) = nanmean(time_list{1,mut_idx},1);
         end
     end
