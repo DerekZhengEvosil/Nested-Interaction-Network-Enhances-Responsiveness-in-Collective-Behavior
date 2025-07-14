@@ -28,8 +28,8 @@ for infRate = infRate_list
             nestedness_ave(mut_idx) = nanmean(nestedness{mut_idx});
             infected_tmp = num_infected{1,mut_idx};
             rec_tmp = num_rec{1, mut_idx};
-            num_infected_ave(mut_idx,:) = nanmean(infected_tmp + rec_tmp,1)./N;
-            num_infected_std(mut_idx,:) = nanstd(double(infected_tmp+rec_tmp),1)./N;
+            num_infected_ave(mut_idx,:) = nanmean(infected_tmp + rec_tmp,1)./N; % mean infected rate
+            num_infected_std(mut_idx,:) = nanstd(double(infected_tmp+rec_tmp),1)./N; 
             meanData = nanmean(infected_tmp + rec_tmp,1)./N;
         end
         num_infected_ave_infNum{inf_idx} = num_infected_ave;
@@ -52,7 +52,7 @@ for draw_mutateRate = draw_mutateRate_list
     draw_cnt = draw_cnt + 1;
     for infNum = draw_infNum_list 
         inf_idx = find(infNum == draw_infNum_list);
-        num_infected_ave = num_infected_ave_infNum{inf_idx};
+        num_infected_ave = num_infected_ave_infNum{inf_idx}; % mean infected rate
         high_CI = high_CI_infNum{inf_idx};
         lower_CI = lower_CI_infNum{inf_idx};
         infected_ave_mut(inf_idx) = num_infected_ave(k_idx,152);
