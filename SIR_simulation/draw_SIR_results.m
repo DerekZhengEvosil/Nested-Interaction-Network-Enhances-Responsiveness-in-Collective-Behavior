@@ -23,9 +23,9 @@ for infRate = infRate_list
             infected_tmp = num_infected{1,mut_idx};
             rec_tmp = num_rec{1, mut_idx};
             num_infected_ave(mut_idx,:) = nanmean(infected_tmp,1);
-            num_rec_ave(mut_idx,:) = nanmean(rec_tmp,1);
-            num_sus_ave(mut_idx,:) = nanmean(N - (infected_tmp + rec_tmp), 1);
-            time_ave(mut_idx,:) = nanmean(time_list{1,mut_idx},1);
+            num_rec_ave(mut_idx,:) = nanmean(rec_tmp,1); % number of infected nodes
+            num_sus_ave(mut_idx,:) = nanmean(N - (infected_tmp + rec_tmp), 1); % number of recorverd node
+            time_ave(mut_idx,:) = nanmean(time_list{1,mut_idx},1); % time lists
         end
     end
 end
