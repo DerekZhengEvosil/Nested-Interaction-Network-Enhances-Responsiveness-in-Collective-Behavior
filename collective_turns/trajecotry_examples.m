@@ -3,20 +3,17 @@
 % for different categories of collective behavior models (PNIN, WSIN, FCIN) under varying conditions, such as noise level and time. 
 % These figures help analyze how the collective response varies across models, and how these responses are compared to a standard signal.
 % group response signals of PNIN
+%% Figure 3g
 clear;clc
 addpath("../utility/")
 folder_name = "../data/collective_turns_data/PNIN_eta_10/Sim_1";
-[mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
-%% 
-% group responses signal of WSIN
-addpath("../utility/")
-folder_name = "../data/collective_turns_data/WSIN_eta_10/Sim_1";
-[mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
+gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
 %%
-% group responses signal of FCIN
-addpath("../utility/")
+folder_name = "../data/collective_turns_data/WSIN_eta_10/Sim_1";
+gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
+%%
 folder_name = "../data/collective_turns_data/FCIN_eta_10/Sim_1";
-[mean_acc, r_area, r_acc, cos_heading] = gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
+gen_acc_r_freq_patch(folder_name, 0, 1, " ", 1, 100, 2, -1.8);
 %% Figure 3h
 clear;clc
 addpath("../utility/")
