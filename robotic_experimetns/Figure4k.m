@@ -1,10 +1,4 @@
-% This MATLAB code generates a horizontal violin plot to visualize and compare various metrics related to the collective following task. 
-% Specifically, it compares the response accuracy and responsiveness for two network models: WSIN and PNIN.
-% The code generates the violin plot for four variables:
-% WSIN-response accuracy (X1)
-% PNIN-response accuracy (X2)
-% WSIN-responsiveness (X3)
-% PNIN-responsiveness (X4)
+% This MATLAB code generates a horizontal violin plot to visualize and compare various metrics related to the collective following task
 clear;clc;
 addpath("../utility/")
 load("../data/robotic_experiments_data/collecitve_following_metrics.mat")
