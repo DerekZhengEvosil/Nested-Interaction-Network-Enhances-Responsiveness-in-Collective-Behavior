@@ -8,10 +8,6 @@ figSize_W = 10;
 set(gcf, 'Units', 'centimeter','Position', [5 5 figSize_L figSize_W])
 used_num = 30;
 % 
-% X1 = mean_acc_WSIN
-% X2 = mean_acc_PNIN
-% X3 = mean_resp_WSIN
-% X4 = mean_resp_PNIN
 dataCell={X1,X2,X3,X4}; 
 dataName={'WSIN-response accuracy','PNIN-response accuracy','WSIN-responsiveness','PNIN-responsiveness'};
 colorList=[253,191,111
