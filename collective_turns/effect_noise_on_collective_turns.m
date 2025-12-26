@@ -24,7 +24,7 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-PNIN")
+title("PNIN")
 ax.FontSize=15;
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
 
@@ -43,7 +43,7 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-WSIN")
+title("WSIN")
 ax.FontSize=15;
 
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
@@ -62,7 +62,7 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-FCIN")
+title("FCIN")
 ax.FontSize=15;
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
 %%
@@ -86,7 +86,7 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-PNIN")
+title("PNIN")
 ax.FontSize=15;
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
 
@@ -105,7 +105,7 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-WSIN")
+title("WSIN")
 ax.FontSize=15;
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
 
@@ -124,6 +124,6 @@ ax.XTick = [1,5,10,15,20];
 ax.XTickLabel = cellstr(string([0,3,5,7,10])); %cellstr(string(draw_level_list));
 % caxis([0.2,1])
 % xtickangle(90)
-title("response accuracy-FCIN")
+title("FCIN")
 ax.FontSize=15;
 set(gca, 'Fontname', 'helvetica', 'FontSize', 20)
