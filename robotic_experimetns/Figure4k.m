@@ -58,5 +58,5 @@ lgd=legend(patchCell,dataName,'box','off');
 lgd.Location='best';
 set(gca,'YTickLabel',[])
 box on
-xlabel("response accuracy/responsivenss")
+xlabel("response accuracy/responsivity")
 set(gca, 'Fontname', 'helvetica', 'FontSize', 12)
