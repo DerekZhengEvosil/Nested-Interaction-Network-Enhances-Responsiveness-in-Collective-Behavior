@@ -2,34 +2,6 @@
 % This MATLAB code generates several figures (2d, 2g, 2e, 2f) related to the dynamics of an SIR (Susceptible-Infected-Recovered) model, 
 % exploring how various parameters such as mutation rate, infection rate, and group size affect the spread of an infectious disease. 
 % The code contains loops to process the results for different mutation rates, infection rates, and group sizes. 
-clear;clc;
-N = 100;
-dataFolder = "../data/SIR_data/Fig2d_data.mat";
-load(dataFolder);
-mute_list = round(linspace(0,1,10),1);
-draw_mutateRate = [0,0.1,0.3,1];
-colorlist = [102,194,165
-252,141,98
-141,160,203]./255;
-for k = 1:length(draw_mutateRate)
-    figure
-    figSize_L = 5;
-    figSize_W = 4;
-    set(gcf, 'Units', 'centimeter','Position', [5 5 figSize_L figSize_W])
-    k_idx = find(draw_mutateRate(k) == mute_list);
-    
-    p1 = plot(time_cell{k_idx}, num_sus_ave_cell{k_idx}, '-','Color', colorlist(1,:),'lineWidth',2);
-    hold on
-    p2 = plot(time_cell{k_idx}, num_infected_ave_cell{k_idx}, '-','Color', colorlist(2,:),'lineWidth',2);
-    hold on
-    p3 = plot(time_cell{k_idx}, num_rec_ave_cell{k_idx},'-','Color', colorlist(3,:),'lineWidth',2);
-    hold on
-    xlim([0, 50])
-    xlabel("time [s]")
-    ylabel("number of individual")
-    legend([p1,p2,p3], ["susceptible", "infected", "recovered"],'box','off','Location','best');
-    set(gca, 'Fontname', 'helvetica', 'FontSize', 9)
-end
 %% Figure 2g
 clear;clc;
 addpath("../data/SIR_data/")
