@@ -1,4 +1,6 @@
 %% codes for reproducing the Fig.2j
+clear;clc
+mute_list = [0:0.1:1];
 load("../data/SIR_data/data_effect_of_infected_num.mat")
 figure
 figSize_L = 6;
