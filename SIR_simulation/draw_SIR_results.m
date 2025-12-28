@@ -79,7 +79,7 @@ mycolor = [107,174,214
 33,113,181]./255;
 for infRate = infRate_list
     infRate_idx = find(infRate == infRate_list);
-    p_e(infRate_idx) = errorbar(mute_cell{infRate_idx}, max_num_infected_ave_cell{infRate_idx}, ...
+    p_e(infRate_idx) = errorbar(mut_cell{infRate_idx}, num_infected_ave_cell{infRate_idx}, ...
         lower_CI_cell{infRate_idx}, high_CI_cell{infRate_idx}, 'Color',mycolor(infRate_idx,:),'LineWidth',1,'Marker','o','MarkerSize',3.5);
     hold on
 end
