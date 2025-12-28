@@ -1,6 +1,6 @@
 %% Figure 2h
 % The purpose of this MATLAB code is to create Figure 2h, 
-% which explores the relationship between the basic reproduction number (R_0) and the final infected proportion in a Susceptible-Infected-Recovered (SIR) model. 
+% which explores the relationship between the basic reproduction R_0 and the final infected proportion in the SIR-type model. 
 % This figure shows how mutation rates affect the final proportion of infected individuals as a function of R_0;
 clear;clc;
 addpath("../data/SIR_data/")
