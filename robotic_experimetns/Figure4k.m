@@ -1,4 +1,4 @@
-% This MATLAB code generates a horizontal violin plot to visualize and compare various metrics related to the collective following task
+% This MATLAB code generates a horizontal violin plot to visualize and compare various metrics (i.e., response accuracy and responsivity) related to the collective following task.
 clear;clc;
 addpath("../utility/")
 load("../data/robotic_experiments_data/collecitve_following_metrics.mat")
