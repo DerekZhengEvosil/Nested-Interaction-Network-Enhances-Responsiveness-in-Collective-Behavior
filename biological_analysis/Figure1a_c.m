@@ -2,8 +2,6 @@ clear;clc;
 addpath("../data/biological_data/")
 load("NODF_curvature_polarization")
 %% 
-% color_ind categorize the group size of fish data, 
-% 1-5 fish, 2-10 fish, 3-15 fish
 % M_index represents average group curvature
 % op is the average group polarization
 % NODF is the nestedness of each interaction network in fish schools
