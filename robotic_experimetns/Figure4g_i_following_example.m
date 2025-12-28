@@ -1,4 +1,4 @@
-% This MATLAB code is used to visualize the robot trajectories during a following task under two different swarm models
+% This MATLAB code is used to visualize the robot trajectories during a collective following task under two different swarm models
 clear;clc
 addpath("../utility/")
 load("../data/robotic_experiments_data/Following_PNIN.mat")
