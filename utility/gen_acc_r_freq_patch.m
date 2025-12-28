@@ -85,15 +85,6 @@ if plot_figure == 1
 %     arrayfun(@(x,y) rectangle('Position', [x-G.r_agent, y-G.r_agent, G.r_agent*2, G.r_agent*2],...
 %         'Curvature', [1 1], 'EdgeColor', [hex2rgb('262626') 0.7], 'FaceColor', [hex2rgb('ffa500') 1]), ...
 %         x(end_step,:), y(end_step,:))
-    h = colorbar('FontSize',9);
-    t=get(h,'YTickLabel');
-    t=strcat(t,'step');
-    set(h,'YTickLabel',t);
-    set(h,'Ticks',[1:10]')
-    set(h, 'TickLabels', num2cell(floor(linspace(400, end_step, 5))*0.2))
-    set(h,'TicksMode','auto')
-    set(h,'Location','northoutside')
-    h.Label.String = 'Time [s]';
     colormap(my_map)
     xlabel('x [m]');
     ylabel('y [m]');
