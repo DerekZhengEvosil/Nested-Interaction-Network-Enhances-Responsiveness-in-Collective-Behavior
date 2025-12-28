@@ -5,5 +5,3 @@ In the following, we provided detailed running instructions and comments for key
 2. clc: Clears the command window for a clean output display.
 3. addpath("../data/") and addpath("../utility/"): These commands add additional directories to the MATLAB search path, ensuring the program can access required files from those locations.
 4. load("*.mat"): This command loads the dataset stored in the high_maneuverability.mat file, which contains experimental data related to the high/low maneuverability example.
-5. Bipartite: Creates a bipartite graph from the adjacency matrix located in the dataset;
-Detailed property can be found at https://bimat.github.io/alg/nestedness.html.
