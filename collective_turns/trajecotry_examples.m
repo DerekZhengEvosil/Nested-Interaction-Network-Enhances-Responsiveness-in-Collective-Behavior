@@ -1,8 +1,5 @@
 %% 
-% This MATLAB code generates two figures (3g and 3h) that visualize the group response signals 
-% for different categories of collective behavior models (PNIN, WSIN, FCIN) under varying conditions, such as noise level and time. 
-% These figures help analyze how the collective response varies across models, and how these responses are compared to a standard signal.
-% group response signals of PNIN
+% This MATLAB code generates two figures (3g and 3h) that visualize the group response signals and trajectory patterns for different swarm models (PNIN, WSIN, FCIN). 
 %% Figure 3g
 clear;clc
 addpath("../utility/")
