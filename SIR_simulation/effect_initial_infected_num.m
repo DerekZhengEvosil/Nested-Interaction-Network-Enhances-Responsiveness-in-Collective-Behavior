@@ -1,4 +1,4 @@
-%%
+%% codes for reproducing the Fig.2j
 load("../data/SIR_data/data_effect_of_infected_num.mat")
 figure
 figSize_L = 6;
