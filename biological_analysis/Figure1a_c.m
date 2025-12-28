@@ -24,7 +24,7 @@ g.set_continuous_color('LCH_colormap',[20 80 ; 40 30 ; 260 260 ]);
 g.axe_property('box','on','XLim', [0.5,1]); 
 g.set_color_options('map','d3_10');
 g.draw();
-%% figure 1b
+%% figure 1c
 figure
 figSize_L = 10;
 figSize_W = 3.5;
@@ -41,7 +41,7 @@ g.stat_glm();
 g.set_color_options('map','brewer3');
 g.draw();
 set(gca, 'Fontname', 'helvetica', 'FontSize', 9)
-%% figure 1c
+%% figure 1b
 figure
 figSize_L = 10;
 figSize_W = 3.5;
