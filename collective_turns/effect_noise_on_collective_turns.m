@@ -1,6 +1,5 @@
 %%
-% This MATLAB code generates multiple contour plots to visualize the response accuracy of different algorithms or metrics under varying levels of noise. 
-% Specifically, it produces three sets of plots, each displaying the response accuracy for different metrics (PNIN, WSIN, and FCIN) under different noise levels and initial conditions.
+% This MATLAB code generates multiple contour plots to visualize the response accuracy and responsivity of different swarm models (PNIN, WSIN, and FCIN) under varying levels of noise. 
 clear;clc;
 load("../data/collective_turns_data/noise_effect_acc_resp.mat") % load all necessary data for reproduing results in simualation experiments of collective turns
 addpath("../utility/")
